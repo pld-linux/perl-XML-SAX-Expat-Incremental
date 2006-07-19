@@ -23,6 +23,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
 BuildRequires:	perl-XML-SAX-Expat
 BuildRequires:	perl-Test-Exception
+BuildRequires:	perl-Test-Distribution
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
