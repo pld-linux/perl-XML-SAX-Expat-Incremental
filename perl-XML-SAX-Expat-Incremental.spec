@@ -8,7 +8,7 @@
 Summary:	XML::SAX::Expat-Incremental - SAX2 driver for Expat (XML::Parser)
 Name:		perl-XML-SAX-Expat-Incremental
 Version:	0.04
-Release:	0.1
+Release:	0.2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -65,5 +65,6 @@ fi
 %defattr(644,root,root,755)
 # %%doc Changes
 %{perl_vendorlib}/XML/SAX/Expat/Incremental.pm
-%dir %attr(755,root,root) %{perl_vendorlib}/XML/SAX/Expat/Incremental.pm
+%dir %attr(755,root,root) %{perl_vendorlib}/XML/SAX/Expat
+%{perl_vendorlib}/XML/SAX/Expat/Incremental.pm
 %{_mandir}/man3/*
