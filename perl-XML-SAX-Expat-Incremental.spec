@@ -5,7 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	SAX-Expat-Incremental
-Summary:	XML::SAX::Expat-Incremental - SAX2 driver for Expat (XML::Parser)
+Summary:	XML::SAX::Expat::Incremental - non-blocking (incremental) parsing
+Summary(pl):	XML::SAX::Expat::Incremental - nieblokuj±ca (przyrostowa) analiza
 Name:		perl-XML-SAX-Expat-Incremental
 Version:	0.04
 Release:	0.2
@@ -14,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	073448591f374103a124a4a2b26992a5
+URL:		http://search.cpan.org/dist/XML-SAX-Expat-Incremental/
 BuildRequires:	perl-XML-NamespaceSupport >= 0.03
 BuildRequires:	perl-XML-Parser >= 2.27
 BuildRequires:	perl-XML-SAX >= 0.03
@@ -29,9 +31,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is an implementation of a SAX2 driver sitting on top of Expat
-(XML::Parser).
-# FIXME
+XML::SAX::Expat::Incremental is an XML::SAX::Expat subclass for
+non-blocking (incremental) parsing, with XML::Parser::ExpatNB.
+
+%description -l pl
+XML::SAX::Expat::Incremental to podklasa XML::SAX::Expat do
+nieblokuj±cej (przyrostowej) analizy z u¿yciem XML::Parser::ExpatNB.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -64,8 +69,6 @@ fi
 
 %files
 %defattr(644,root,root,755)
-# %%doc Changes
-%{perl_vendorlib}/XML/SAX/Expat/Incremental.pm
-%dir %attr(755,root,root) %{perl_vendorlib}/XML/SAX/Expat
+%dir %{perl_vendorlib}/XML/SAX/Expat
 %{perl_vendorlib}/XML/SAX/Expat/Incremental.pm
 %{_mandir}/man3/*
