@@ -9,7 +9,7 @@ Summary:	XML::SAX::Expat::Incremental - non-blocking (incremental) parsing
 Summary(pl):	XML::SAX::Expat::Incremental - nieblokuj±ca (przyrostowa) analiza
 Name:		perl-XML-SAX-Expat-Incremental
 Version:	0.04
-Release:	0.2
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
