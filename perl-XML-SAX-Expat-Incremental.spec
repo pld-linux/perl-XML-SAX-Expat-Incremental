@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	SAX-Expat-Incremental
 Summary:	XML::SAX::Expat::Incremental - non-blocking (incremental) parsing
-Summary(pl.UTF-8):   XML::SAX::Expat::Incremental - nieblokująca (przyrostowa) analiza
+Summary(pl.UTF-8):	XML::SAX::Expat::Incremental - nieblokująca (przyrostowa) analiza
 Name:		perl-XML-SAX-Expat-Incremental
 Version:	0.04
 Release:	1
