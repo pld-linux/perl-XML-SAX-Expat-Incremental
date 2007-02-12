@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	SAX-Expat-Incremental
 Summary:	XML::SAX::Expat::Incremental - non-blocking (incremental) parsing
-Summary(pl):	XML::SAX::Expat::Incremental - nieblokuj±ca (przyrostowa) analiza
+Summary(pl.UTF-8):   XML::SAX::Expat::Incremental - nieblokujÄ…ca (przyrostowa) analiza
 Name:		perl-XML-SAX-Expat-Incremental
 Version:	0.04
 Release:	1
@@ -34,9 +34,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 XML::SAX::Expat::Incremental is an XML::SAX::Expat subclass for
 non-blocking (incremental) parsing, with XML::Parser::ExpatNB.
 
-%description -l pl
+%description -l pl.UTF-8
 XML::SAX::Expat::Incremental to podklasa XML::SAX::Expat do
-nieblokuj±cej (przyrostowej) analizy z u¿yciem XML::Parser::ExpatNB.
+nieblokujÄ…cej (przyrostowej) analizy z uÅ¼yciem XML::Parser::ExpatNB.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
