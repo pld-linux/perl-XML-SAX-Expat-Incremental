@@ -3,7 +3,6 @@
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	SAX-Expat-Incremental
 Summary:	XML::SAX::Expat::Incremental - non-blocking (incremental) parsing
